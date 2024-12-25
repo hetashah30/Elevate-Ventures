@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #ff7eb3, #ff758c);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(bg.jpg);
+  }
+  
+  .container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.24);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  
+  .front {
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 80%;
+    padding: 10px;
+    background: #1e3d4a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2f5d7d;
+  }
+  
+  p {
+    margin: 15px 0 0;
+  }
+  
+  span {
+    color: #12232a;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
