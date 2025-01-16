@@ -19,14 +19,13 @@ loginForm.addEventListener('submit', (e) => {
   const password = document.getElementById('login-password').value;
 
   // Assuming validation is successful
-  if (email && password) {
+  if (email=="example@gmail.com"&& password=="abc123") {
     alert('Login successful!');
     window.location.href = 'https://elevateventure2.odoo.com/';
   } else {
-    alert('Please fill in both email and password.');
+    alert('Unauthorized User. Please fill valid email and password.');
   }
 });
-
 // Handle signup submission
 signupForm.addEventListener('submit', (e) => {
   e.preventDefault();
