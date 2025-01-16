@@ -26,6 +26,7 @@ loginForm.addEventListener('submit', (e) => {
     alert('Unauthorized User. Please fill valid email and password.');
   }
 });
+
 // Handle signup submission
 signupForm.addEventListener('submit', (e) => {
   e.preventDefault();
