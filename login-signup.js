@@ -21,7 +21,7 @@ loginForm.addEventListener('submit', (e) => {
   // Assuming validation is successful
   if (email && password) {
     alert('Login successful!');
-    window.location.href = 'https://elevateventures.odoo.com/';
+    window.location.href = 'https://elevateventure2.odoo.com/';
   } else {
     alert('Please fill in both email and password.');
   }
